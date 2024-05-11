@@ -7,7 +7,7 @@ import styles from "./WhatWeProvideBlock.module.scss";
 
 interface WhatWeProvideBlockProps {}
 
-export const WhatWeProvideBlock: FC<WhatWeProvideBlockProps> = ({}) => {
+export default function WhatWeProvideBlock({}) {
   const { whatWeProvideRef } = useRefBlockContext();
 
   return (
@@ -35,4 +35,4 @@ export const WhatWeProvideBlock: FC<WhatWeProvideBlockProps> = ({}) => {
       </div>
     </div>
   );
-};
+}

@@ -7,7 +7,7 @@ import imageBack from "@/shared/libs/assets/shop.webp";
 // styles
 import styles from "./AboutBlock.module.scss";
 
-export const AboutBlock = ({}) => {
+export default function AboutBlock({}) {
   const { aboutRef } = useRefBlockContext();
 
   return (
@@ -35,4 +35,4 @@ export const AboutBlock = ({}) => {
       </div>
     </div>
   );
-};
+}

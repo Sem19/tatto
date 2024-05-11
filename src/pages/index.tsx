@@ -2,9 +2,9 @@
 import { Link } from "@/shared/ui/Link/Link";
 // ui
 import MainBlock from "./ui/MainBlock/MainBlock";
-import { AboutBlock } from "./ui/AboutBlock/AboutBlock";
-import { GalleryBlock } from "./ui/GalleryBlock/GalleryBlock";
-import { WhatWeProvideBlock } from "./ui/WhatWeProvideBlock/WhatWeProvideBlock";
+import AboutBlock from "./ui/AboutBlock/AboutBlock";
+import GalleryBlock from "./ui/GalleryBlock/GalleryBlock";
+import WhatWeProvideBlock from "./ui/WhatWeProvideBlock/WhatWeProvideBlock";
 import cloudinary from "@/shared/libs/utils/cloudinary";
 
 export default function Home({ images }: any) {

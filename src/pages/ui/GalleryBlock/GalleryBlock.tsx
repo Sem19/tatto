@@ -18,7 +18,7 @@ interface GalleryBlockProps {
   images: string[];
 }
 
-export const GalleryBlock: FC<GalleryBlockProps> = ({ images }) => {
+export default function GalleryBlock({ images }: GalleryBlockProps) {
   const laptop = useMediaQuery("(max-width: 1440px)");
 
   const tablet = useMediaQuery("(max-width: 1024px)");
@@ -53,4 +53,4 @@ export const GalleryBlock: FC<GalleryBlockProps> = ({ images }) => {
       </div>
     </div>
   );
-};
+}
