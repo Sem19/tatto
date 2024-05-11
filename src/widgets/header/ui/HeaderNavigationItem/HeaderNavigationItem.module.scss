@@ -1,0 +1,61 @@
+.HeaderNavigationItem {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+
+  @media (max-width: 900px) {
+    font-size: 15px;
+  }
+}
+
+.HeaderNavigationItem {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.HeaderNavigationItem::before,
+.HeaderNavigationItem::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.HeaderNavigationItem::before {
+  background-color: #c6ac8f;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.HeaderNavigationItem::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #c6ac8f;
+}
+
+.HeaderNavigationItem:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.HeaderNavigationItem:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.HeaderNavigationItem span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.HeaderNavigationItem:hover span {
+  transform: translate3d(-200%, 0, 0);
+}

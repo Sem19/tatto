@@ -1,0 +1,9 @@
+.HeaderNavigationItems {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @media (max-width: 900px) {
+    gap: 15px;
+  }
+}

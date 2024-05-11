@@ -1,0 +1,142 @@
+.Footer {
+  background-color: black;
+  height: 572px;
+  border-top: 2px solid #5e503f;
+  padding: 0px 80px;
+  @media (max-width: 830px) {
+    padding: 0px 40px;
+  }
+
+  @media (max-width: 600px) {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+.topContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 55px 0px;
+  border-bottom: 3px solid #5e503f;
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+}
+
+.middleContainer {
+  padding-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    text-align: center;
+  }
+
+  .siteDescription {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    .logoContainer {
+      margin-top: -21px;
+      display: flex;
+      flex-direction: column;
+
+      .logoDescription {
+        max-width: 350px;
+        width: 100%;
+        color: #c6ac8f;
+        font-size: 20px;
+        font-weight: 500;
+
+        @media (max-width: 950px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .socialsContainer {
+      .socialTitle {
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.title {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 2px solid #c6ac8f;
+}
+
+.bottomContainer {
+  border-top: 2px solid #5e503f;
+  background-color: black;
+  color: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quickLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 900px) {
+    margin-left: auto;
+  }
+
+  @media (max-width: 600px) {
+    margin-left: 0px;
+  }
+
+  .linksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.socialsButtons {
+  display: flex;
+  gap: 15px;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+}
+
+.qrCodeContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.icon {
+  @media (max-width: 950px) {
+    width: 30px;
+    height: 30px;
+  }
+}

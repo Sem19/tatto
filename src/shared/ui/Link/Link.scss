@@ -1,0 +1,72 @@
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  padding: 32px;
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  &__circle,
+  &__text,
+  &__white-circle {
+    position: absolute;
+  }
+
+  &__circle {
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 100%;
+    width: 100%;
+    box-shadow: 0 0 1px 1px #fff;
+    transition: 0.3s linear;
+  }
+
+  &__white-circle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    background: #ffffff;
+    display: flex;
+    transition: 0.3s ease-in-out;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      margin: auto;
+      path {
+        fill: #5e503f;
+      }
+    }
+  }
+
+  &__text {
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 2;
+    padding: 24px 8px;
+    transition: 0.3s linear;
+  }
+
+  &:hover {
+    .btn__circle {
+      transform: scale(0);
+    }
+
+    .btn__white-circle {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .btn__text {
+      transform: translate(40px, -50%);
+    }
+  }
+}
+
+.btn__text {
+  font-size: 20px;
+}

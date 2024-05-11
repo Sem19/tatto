@@ -1,0 +1,35 @@
+.FooterInfoItem {
+  // max-width: 420px;
+  // width: 100%;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    width: 275px;
+  }
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+
+    @media (max-width: 950px) {
+      font-size: 18px;
+    }
+  }
+
+  .description {
+    color: #c6ac8f;
+    font-size: 22px;
+    font-weight: 500;
+    @media (max-width: 950px) {
+      font-size: 16px;
+    }
+  }
+}

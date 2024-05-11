@@ -1,0 +1,11 @@
+@mixin FlexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ImageBorder {
+  border: 4px solid #c6ac8f;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(198, 172, 143, 0.5);
+}

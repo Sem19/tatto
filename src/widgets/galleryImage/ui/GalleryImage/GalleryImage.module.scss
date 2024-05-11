@@ -1,0 +1,6 @@
+@import "@/app/styles/mixins.scss";
+
+.GalleryImage {
+  background-size: cover;
+  @include ImageBorder;
+}

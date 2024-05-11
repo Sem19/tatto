@@ -1,0 +1,150 @@
+@import "@/app/styles/mixins.scss";
+
+.AboutBlock {
+  width: 100%;
+  height: 100vh;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(7, 7, 7, 0.411) 0%,
+      rgba(15, 15, 15, 0.349) 100%
+    ),
+    url("../../../shared/libs/assets/secondBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (max-width: 980px) {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.leftSide {
+  .textContainer {
+    width: 605px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: black;
+    height: 406px;
+
+    @media (max-width: 1350px) {
+      width: 500px;
+      height: 336px;
+    }
+
+    @media (max-width: 1140px) {
+      width: 420px;
+      height: 284px;
+      padding: 20px;
+    }
+
+    @media (max-width: 460px) {
+      width: 360px;
+      height: 243px;
+    }
+
+    @media (max-width: 400px) {
+      width: 300px;
+      height: 203px;
+    }
+
+    .titleContainer {
+      .title {
+        color: white;
+        font-size: 65px;
+        font-weight: 700;
+        @media (max-width: 1350px) {
+          font-size: 55px;
+        }
+
+        @media (max-width: 460px) {
+          font-size: 30px;
+        }
+
+        @media (max-width: 400px) {
+          font-size: 25px;
+        }
+      }
+      .subtitle {
+        font-size: 55px;
+        font-weight: 600;
+        color: #c6ac8f;
+        @media (max-width: 1350px) {
+          font-size: 45px;
+        }
+
+        @media (max-width: 460px) {
+          font-size: 25px;
+        }
+
+        @media (max-width: 400px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .paragraphContainer {
+      margin-top: 20px;
+      width: 100%;
+      .paragraph {
+        color: #5e503f;
+        font-size: 25px;
+        font-weight: 600;
+        @media (max-width: 1350px) {
+          font-size: 22px;
+        }
+
+        @media (max-width: 1140px) {
+          font-size: 19px;
+        }
+
+        @media (max-width: 460px) {
+          font-size: 16px;
+        }
+
+        @media (max-width: 400px) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .imagesContainer {
+    position: relative;
+
+    .imageBack {
+      width: 605px;
+      height: auto;
+      @include ImageBorder;
+
+      @media (max-width: 1350px) {
+        width: 500px;
+      }
+
+      @media (max-width: 1140px) {
+        width: 420px;
+      }
+
+      @media (max-width: 460px) {
+        width: 360px;
+      }
+
+      @media (max-width: 400px) {
+        width: 300px;
+      }
+    }
+  }
+}

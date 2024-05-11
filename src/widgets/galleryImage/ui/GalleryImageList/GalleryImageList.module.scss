@@ -1,0 +1,27 @@
+.GalleryImageList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 44px;
+  justify-items: center;
+  align-self: center;
+
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1110px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.GalleryImageListFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 44px;
+}
