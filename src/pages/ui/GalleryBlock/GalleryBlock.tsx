@@ -42,12 +42,12 @@ export const GalleryBlock: FC<GalleryBlockProps> = ({ images }) => {
           height={mobile ? "auto" : ""}
           images={
             mobile
-              ? images.slice(0, 3)
+              ? images?.slice(0, 3)
               : tablet
-              ? images.slice(0, 6)
+              ? images?.slice(0, 6)
               : laptop
-              ? images.slice(0, 9)
-              : images.slice(0, 9)
+              ? images?.slice(0, 9)
+              : images?.slice(0, 9)
           }
         />
       </div>

@@ -24,7 +24,7 @@ export const GalleryImageList: FC<GalleryImageListProps> = ({
           : styles.GalleryImageList
       }
     >
-      {images.map((image) => (
+      {images?.map((image) => (
         <GalleryImage
           key={image}
           src={image}
